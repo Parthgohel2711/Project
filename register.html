@@ -24,6 +24,7 @@
             position: fixed;
             border-radius: 5px;
             margin: 0px 0px 0px 690px;
+            border: 2px solid black;
         }
         img{
             height: 500px;
@@ -31,7 +32,7 @@
         }
 
         .login{
-            margin: 100px 0px 0px 170px;
+            margin: 50px 0px 0px 170px;
             font-size: xx-large;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: lighter;
@@ -41,7 +42,7 @@
             background-color: transparent;
             font-size: medium;
             border: 0px solid;
-            margin: 20px 0px 0px 110px;
+            margin: 10px 0px 0px 110px;
             height: 25px;
             width: 280px;
             text-align: left;
@@ -49,10 +50,7 @@
             outline: none;
         }
 
-         .input1{
-            margin-top: 50px;
-         }
-
+        
          .loginbutton{
             background-color: black;
             color: white;
@@ -60,7 +58,7 @@
             border: none;
             height: 40px;
             width: 300px;
-            margin: 50px 0px 0px 100px;
+            margin: 50px 0px 40px 100px;
             text-align: center;
             font-weight: bolder;
 
@@ -81,19 +79,40 @@
             font-style: italic;
             margin-left: 30px;
         }
+
+        a{
+            margin: 100px 0px 0px 160px;
+            color: black;
+            text-decoration: none;
+            font-size: large;
+        }
+
+        #unm{
+            margin-top: 40px; 
+        }
+
+        
     </style>
+
+    
+
+
 </head>
 <body>
     <h1>Food Zone</h1>
     <div class="part1">
-        <img src="D:\Project Files\images\fastfood.jpg" alt="Image Not Found">
+        <img src="D:\Project Files\images\foodzone.jpg" alt="Image Not Found">
     </div>
     <div class="part2">
-        <h1 class="login">Login Here..</h1>
-        <input type="text" placeholder="Username" class="input1" name="txtnm" required><br>
+        <h1 class="login">Register Here..</h1>
+        <input type="text" placeholder="Username" class="input1" id="unm" name="txtnm" required><br>
+        <input type="email" placeholder="Email" class="input1" name="txteml" required><br>
+        <input type="number" placeholder="Contect No." class="input1" name="txtcont" required><br>
+        <input type="text" placeholder="Address" class="input1" name="txtadr" required><br>
         <input type="password" placeholder="Password" name="txtpwd" required><br>
-        <input type="button" value="Login" class="loginbutton">
-        <a href="login.html">New Already ? Login Here..</a>
+        <button type="submit" class="loginbutton" onclick="location.href = 'dashboard.html';">Submit</button>
+        <a href="login.html">Already User ? Register Here..</a>
     </div>
+    
 </body>
 </html>
